@@ -1,0 +1,266 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+}
+
+h2{
+
+}
+
+/********************* Intro *********************/
+
+#intro{
+    background-color: #0CCE6B;
+    //background: -moz-linear-gradient(-45deg, #c82273 0%, #e24a35 100%);
+    //background: -webkit-linear-gradient(135deg, #3b5998 0%,#02b3e4 100%);
+    //background: -webkit-linear-gradient(135deg, #0CCE6B 0%, #0CCE4D 100%);
+    height: 100vh;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    //background: linear-gradient(135deg, #c82273 0%,#e24a35 100%);
+    //background: linear-gradient(to bottom right, #02b3e4, #02ccba);
+    background: linear-gradient(to bottom right, #3b5998,#02b3e4);
+}
+
+.skin{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(70,70,70,0.7 );
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    position: relative;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-image:url('http://www.fa-d.com/wp-content/themes/fa-design/library/media/images/pattern.png');
+    background-color: rgba(0,0,0,0.4);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position:absolute;
+}
+
+.slogan{
+    -webkit-transform: rotate(-75deg); transform: rotate(-75deg);
+    text-align: center;
+    letter-spacing: 20px;
+    width: 100%;
+    background-image:url('../img/test.png') no-repeat;
+    position: absolute;
+    text-align: center;
+    padding: 180px;
+    vertical-align: middle;
+    font-size: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+
+.navbar-fixed{
+    border-top: 1px solid rgba(34,34,34,0.2);
+    height: 110px;
+    margin: 200px 0 25px 0;
+    padding: 0;
+}
+
+.menu{
+    float: right;
+    font-size: 20px;
+}
+
+/********************* About *********************/
+
+#about{
+    height: 100vh;
+    background-color: #fafafa;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+#about h2{
+    color: #02b3e4;
+    font-size: 40px;
+    padding: 30px;
+    vertical-align: middle;
+}
+
+.img-circle{
+	-webkit-box-shadow: inset 13px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    inset 13px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+    height: auto;
+    width: 180px;
+}
+
+/********************* Projects *********************/
+
+#projects{
+    height: 100vh;
+    //background: linear-gradient(135deg, #c82273 0%,#e24a35 100%);
+    color: #2e2f33;
+    margin: auto;
+    text-align: center;
+    overflow: auto;
+    background: linear-gradient(to bottom right, #3b5998,#02b3e4);
+}
+
+#projects h2{
+    color: inherit;
+    font-size: 40px;
+    padding: 30px;
+    vertical-align: middle;
+}
+
+.showcase{
+    vertical-align: middle;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.card{
+    height: 650px;
+    width: 450px;
+    background-color:#2e2f33;
+    margin: 0 25px;
+    color: white;
+    //background-color: rgba(0, 0, 0, 0.8);*/
+}
+
+.card-header{
+    background-color: transparent;
+    height: 150px;
+    font-size: 30px;
+    border-bottom: 1px solid white:
+}
+
+.controlArrow{
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/********************* Contact *********************/
+
+#contact{
+    height: 100vh;
+    background-color: #2e2f33;
+    margin: auto;
+    text-align: center;
+    color: #02b3e4;
+}
+
+#contact h2{
+    color: inherit;
+    max-height: 200px;
+    margin: 40px;
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.contact-form{
+    height: 465px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    color: #555;
+}
+
+.contact-form input:focus, textarea:focus{
+    outline: none;
+}
+
+.contact-form input {
+    height: 60px;
+    width: 100%;
+    max-width: 380px;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+.input-field{
+    padding: 0;
+    font-size: 16px;
+}
+
+.contact-form textarea{
+    margin: 20px 10px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 780px;
+    overflow-y: auto;
+    padding: 15px;
+    resize: none;
+
+}
+
+.contact-form button{
+    background-color: #02b3e4;
+    border: solid 1px black;
+    color: black;
+    width: 100%;
+    min-width: 300px;
+    max-width: 450px;
+    border-radius: 0;
+    padding: 17px;
+}
+
+.social{
+    max-height: 200px;
+    color: inherit;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 20px;
+}
+
+.brand-footer{
+    padding: 16px 0 25px 0;
+    vertical-align: bottom;
+}
+
+.icons > li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+.icons > li > a {
+    color: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+    .slogan{
+        padding: 275px 0;
+        font-size: 13px;
+    }
+
+    .contact-form textarea{
+        max-width: 380px;
+        margin: 20px 0;
+    }
+    .contact-form button{
+        max-width: 380px;
+    }
+
+    .input-field{
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .input-field{
+        padding: 0 15px 0 15px;
+    }
+
+    .contact-form textarea{
+        max-width: 800px;
+        margin: 20px 0;
+    }
+}
