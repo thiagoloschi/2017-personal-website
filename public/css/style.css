@@ -57,6 +57,25 @@ h2{
     position:absolute;
 }
 
+.language{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 110px;
+}
+
+.language > a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.text4{
+    font-family: FontAwesome;
+    margin-top: -40px;
+    font-size: 13px;
+    padding-left: 700px;
+}
+
 .slogan{
     -webkit-transform: rotate(-75deg); transform: rotate(-75deg);
     text-align: center;
@@ -64,7 +83,7 @@ h2{
     width: 100%;
     position: absolute;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
     vertical-align: middle;
     font-size: 20px;
     font-family: 'Amatic SC', cursive;
@@ -91,13 +110,19 @@ h2{
     overflow: hidden;
     margin: auto;
     text-align: center;
+    font-family: 'Roboto';
 }
 
 #about h2{
     color: #02b3e4;
-    font-size: 40px;
-    padding: 30px;
+    font-size: 30px;
+    padding: 10px;
     vertical-align: middle;
+}
+
+.about-me p{
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .img-circle{
@@ -105,7 +130,7 @@ h2{
 	-moz-box-shadow:    inset 13px 2px 3px 0px rgba(50, 50, 50, 0.75);
 	box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
     height: auto;
-    width: 180px;
+    width: 130px;
 }
 
 /********************* Projects *********************/
@@ -116,7 +141,7 @@ h2{
     color: #2e2f33;
     margin: auto;
     text-align: center;
-    overflow: auto;
+    overflow: hidden;
     background: linear-gradient(to bottom right, #3b5998,#02b3e4);
 }
 
@@ -129,31 +154,27 @@ h2{
 
 .showcase{
     vertical-align: middle;
-    padding: 30px;
-    margin: auto;
+    padding: 0 35px;
     text-align: center;
     width: 100%;
 }
 
 .card{
-    height: 650px;
-    width: 450px;
+    height: 250px;
     background-color:#2e2f33;
-    margin: 0 25px;
     color: white;
-    //background-color: rgba(0, 0, 0, 0.8);*/
+    //background-color: rgba(0, 0, 0, 0.8);
+    margin: auto;
 }
 
 .card-header{
-    background-color: transparent;
-    height: 150px;
-    font-size: 30px;
-    border-bottom: 1px solid white:
+    margin: auto;
+    background-color: white;
+    color: black;
+    height: 200px;
+    border-bottom: 1px solid red:
 }
 
-.controlArrow{
-    border-color: rgba(0, 0, 0, 0.3);
-}
 
 
 
@@ -171,7 +192,7 @@ h2{
 #contact h2{
     color: inherit;
     max-height: 200px;
-    margin: 40px;
+    padding: 40px;
     font-size: 40px;
     vertical-align: middle;
 }
@@ -250,7 +271,9 @@ h2{
 
 @media only screen and (max-width: 768px) {
     .slogan{
-        font-size: 13px;
+        font-size: 16px;
+        padding-top:
+        200px;
     }
 
     .contact-form textarea{
