@@ -120,9 +120,23 @@ h2{
     vertical-align: middle;
 }
 
+.info{
+    margin: 60px;
+}
+
+.skills{
+    padding-left: 110px;
+}
+
 .about-me p{
     font-size: 16px;
     letter-spacing: 1px;
+    text-align: justify;
+}
+
+.about-me h3{
+    text-align: justify;
+    color: #02b3e4;
 }
 
 .img-circle{
@@ -234,7 +248,7 @@ h2{
 
 }
 
-.contact-form button{
+.but{
     background-color: #02b3e4;
     border: solid 1px black;
     color: black;
@@ -243,6 +257,9 @@ h2{
     max-width: 450px;
     border-radius: 0;
     padding: 17px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    letter-spacing: 1px;
 }
 
 .social{
@@ -273,7 +290,13 @@ h2{
     .slogan{
         font-size: 16px;
         padding-top:
-        200px;
+        220px;
+    }
+
+    .language{
+        top:0;
+        right: 0;
+        padding-right: 300px;
     }
 
     .contact-form textarea{
