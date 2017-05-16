@@ -151,7 +151,6 @@ h2{
 
 #projects{
     height: 100vh;
-    //background: linear-gradient(135deg, #c82273 0%,#e24a35 100%);
     color: #2e2f33;
     margin: auto;
     text-align: center;
@@ -175,15 +174,13 @@ h2{
 
 .card{
     height: 250px;
-    background-color:#2e2f33;
     color: white;
-    //background-color: rgba(0, 0, 0, 0.8);
     margin: auto;
 }
 
 .card-header{
     margin: auto;
-    background-color: white;
+    background-color: rgba(50, 50, 50, 0.8);;
     color: black;
     height: 200px;
     border-bottom: 1px solid red:

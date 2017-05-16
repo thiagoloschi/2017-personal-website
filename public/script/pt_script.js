@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    swal("Sorry for the inconvenience!", "This website is being updated.", "warning");
+    swal("Desculpe o transtorno!", "Este site está sendo atualizado.", "warning");
 
     //alert($( window ).width());
 
@@ -38,8 +38,8 @@ $(document).ready(function() {
         event.preventDefault();
 
         swal({
-          title: "Are you done, already?",
-          text: "Please take your time!",
+          title: "Já terminou?",
+          text: "Por favor, leve o tempo que precisar!",
           type: "info",
           showCancelButton: true,
           closeOnConfirm: false,
@@ -51,7 +51,7 @@ $(document).ready(function() {
             var message = $('#message').val();
 
             if(name.value == "" || email.value == "" || message.value == "") {
-              swal("Something went wrong...", "Please fill all the fields.", "error");
+              swal("Há algo de errado...", "Por favor, preencha todos os campos.", "error");
               return false;
             }
 
@@ -67,13 +67,13 @@ $(document).ready(function() {
                 dataType:"json",
                 success:function() {
                     console.log('success');
-                    swal("Thanks for your contact!", "I'll reply soon.", "success")
+                    swal("Obrigado por seu contato!", "Responderei em breve.", "success")
                     $('#name').val('');
                     $('#email').val('');
                     $('#message').val('');
                 },
                 error: function(){
-                    swal("Something went wrong...", "Please try again.", "error");
+                    swal("Há algo de errado...", "Por favor, tente novamente.", "error");
                 }
             });
         });
