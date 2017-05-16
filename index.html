@@ -42,12 +42,12 @@
             </section>
 
 
-            <section id="about" class="section active">
+            <section id="about" class="section">
                 <div class="about-me">
                     <div class="container">
                         <img class="img-circle" src="public/img/profile.png" />
                         <h2>Thiago Loschi</h2>
-                        <p>My name is <strong>Thiago Loschi</strong> and I'm a Software Engineer. I'm passionate about building fast, scalably and reliable applications. I've been working with Web Development in the past 2 years and I'm always seeking to learning something new. Currently, I'm a Full Stack Web Developer at <a href="">PRTE</a> and live in Barbacena, Brazil.</p>
+                        <p>My name is <strong>Thiago Loschi</strong> and I'm passionate about building fast, scalable and reliable applications. I've been working with Web Development in the past 2 years and I'm always seeking to learning something new. Currently, I'm a Full Stack Web Developer at <a href="http://prte.com.br">PRTE</a> and live in Barbacena, Brazil.</p>
                         <div class="row info">
                             <div class="col-sm-6">
                                 <h3>Education</h4>
@@ -59,8 +59,8 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 skills">
-                                <h3>Skills</h4>
-                                <p><strong>Javascript: </strong> Node.js, Angular.js, React</p>
+                                <h3>Main Skills</h4>
+                                <p><strong>Javascript: </strong> Node.js, Angular.js, React, Universal JS</p>
                                 <p><strong>Python</strong></p>
                                 <p><strong>Ruby on Rails</strong></p>
                                 <p><strong>Java: </strong>JPA, JSP, JSF, EJB</p>
@@ -68,11 +68,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <button class="btn btn-lg but" type="submit">Linkedin <i class="fa fa-linkedin" aria-hidden="true"></i></button>
+                                <a target="_blank" href="https://linkedin.com/in/thiagoloschi"><button class="btn btn-lg but" type="submit">Linkedin <i class="fa fa-linkedin" aria-hidden="true"></i></button></a>
                             </div>
                             <div class="col-sm-6">
-
-                                <button class="btn btn-lg but" type="submit">Resume <i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+                                <a href="public/files/englishResume.pdf"><button class="btn btn-lg but" type="submit">Resume <i class="fa fa-envelope-o" aria-hidden="true"></i></button></a>
                             </div>
                         </div>
 
@@ -129,46 +128,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-3 wow zoomIn card">
-                                    <div class="card-header">
-                                        Project 1
-                                    </div>
-                                </div>
-                                <div class="col-sm-3 card">
-                                    <div class="card-header">
-                                        Project 2
-                                    </div>
-                                </div>
-                                <div class="col-sm-3 card">
-                                    <div class="card-header">
-                                        Project 3
-                                    </div>
-                                </div>
-                                <div class="col-sm-3 card">
-                                    <div class="card-header">
-                                        Project 4
-                                    </div>
-                                </div>
-                            </div>
                         </div>
             </section>
 
             <section id="contact" class="section wrapper">
                 <h2>Get In Touch</h2>
                 <div class="container">
-                    <form class="contact-form" action="https://formspree.io/thiagoloschi@gmail.com" method="POST">
+                    <form class="contact-form">
                         <div class="col-sm-6 input-field">
-                          <input class="inpt" type="text" name="name" placeholder="Your name *" required="" autocomplete="off">
+                          <input class="inpt" type="text" id="name" name="name" placeholder="Your name *" required="" autocomplete="off">
                         </div>
                         <div class="col-sm-6 input-field">
-                          <input class="inpt" type="email" name="_replyto" placeholder="Your email *" required="" autocomplete="off">
+                          <input class="inpt" type="email" id="_replyto"  name="_replyto" placeholder="Your email *" required="" autocomplete="off">
                         </div>
                         <div class="col-sm-12 input-field">
-                          <textarea class="inpt" name="message" rows="7" placeholder="Your message *" required=""></textarea>
+                          <textarea class="inpt" id="message" name="message" rows="7" placeholder="Your message *" required=""></textarea>
                         </div>
                         <div class="col-md-12 input-field col s12">
-        					<button class="btn btn-lg but" type="submit" value="Send">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+        					<button class="btn btn-lg but" value="Send">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
         				</div>
                     </form>
                 </div>
@@ -194,9 +171,12 @@
             </section>
         </div>
 
+
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript" src="public/assets/fullPage/jquery.fullPage.js"></script>
         <script type="text/javascript" src="public/assets/funnyText/jquery.funnyText.js"></script>
+        <script src="public/assets/sweetalert/dist/sweetalert.min.js"></script>
         <script type="text/javascript" src="public/script/script.js"></script>
     </body>
 </html>
