@@ -34,16 +34,9 @@ $(document).ready(function() {
         direction: 'up'
     });
 
-    var name = $('#name');
-    var _replyto = $('#_replyto');
-    var message = $('#message');
-
     $('form').submit(function( event ){
         event.preventDefault();
-        if(name.val() == "" || _replyto.val() == "" || message.val() == "") {
-          swal("Something went wrong...", "Please try again.", "failed")
-          return false;
-        }
+
         swal({
           title: "Are you done, already?",
           text: "Please take your time!",
@@ -53,14 +46,34 @@ $(document).ready(function() {
           showLoaderOnConfirm: true,
         },
         function(){
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var message = $('#message').val();
+
+            if(name.value == "" || email.value == "" || message.value == "") {
+              swal("Something went wrong...", "Please try again.", "failed");
+              return false;
+            }
+
             $.ajax({
-                method: 'POST',
-                url: '//formspree.io/thiagoloschi@gmail.com',
-                data: $('.contact-form').serialize(),
-                datatype: 'json',
-                success: function(data){
+                url:'https://formspree.io/thiagoloschi@gmail.com',
+                method:'POST',
+                data:{
+                    name: name,
+                    _replyto: email,
+                    email: email,
+                    message: message
+                },
+                dataType:"json",
+                success:function() {
+                    console.log('success');
                     swal("Thanks for your Contact!", "I'll reply soon!", "success")
-                    console.log(data);
+                    $('#name').val('');
+                    $('#email').val('');
+                    $('#message').val('');
+                },
+                error: function(){
+                    swal("Something went wrong...", "Please try again.", "error");
                 }
             });
         });
