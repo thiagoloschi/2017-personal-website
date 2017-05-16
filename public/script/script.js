@@ -34,8 +34,16 @@ $(document).ready(function() {
         direction: 'up'
     });
 
+    var name = $('#name');
+    var _replyto = $('#_replyto');
+    var message = $('#message');
+
     $('form').submit(function( event ){
         event.preventDefault();
+        if(name.val() == "" || _replyto.val() == "" || message.val() == "") {
+          swal("Something went wrong...", "Please try again.", "failed")
+          return false;
+        }
         swal({
           title: "Are you done, already?",
           text: "Please take your time!",
@@ -45,16 +53,15 @@ $(document).ready(function() {
           showLoaderOnConfirm: true,
         },
         function(){
-            $.post("https://formspree.io/thiagoloschi@gmail.com",
-            {
-              name: $('#name').text(),
-              _replyto: $('#_replyto').text(),
-              message: $('#message').text()
-            },
-            function(data){
-                swal("Thanks for your Contact!", "I'll reply soon!", "success")
-            },function(data) {
-                swal("Something went wrong...", "Please try again.", "failed")
+            $.ajax({
+                method: 'POST',
+                url: '//formspree.io/thiagoloschi@gmail.com',
+                data: $('.contact-form').serialize(),
+                datatype: 'json',
+                success: function(data){
+                    swal("Thanks for your Contact!", "I'll reply soon!", "success")
+                    console.log(data);
+                }
             });
         });
     });
