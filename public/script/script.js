@@ -34,32 +34,28 @@ $(document).ready(function() {
         direction: 'up'
     });
 
-    // $('form').submit(){
-    //     swal({
-    //       title: "Are you done, already?"
-    //       text: "Please take your time!",
-    //       type: "question",
-    //       showCancelButton: true,
-    //       closeOnConfirm: false,
-    //       showLoaderOnConfirm: true,
-    //     },
-    //     function(){
-    //
-    //     });
-    // }
-
-    $('#send').click(function(event){
+    $('form').submit(function( event ){
         event.preventDefault();
-        $.post("https://formspree.io/thiagoloschi@gmail.com",
-        {
-          name: $('#name').text(),
-          _replyto: $('#_replyto').text(),
-          message: $('#message').text()
+        swal({
+          title: "Are you done, already?",
+          text: "Please take your time!",
+          type: "info",
+          showCancelButton: true,
+          closeOnConfirm: false,
+          showLoaderOnConfirm: true,
         },
-        function(data){
-            alert('foi', data);
-        },function(data) {
-            alert('erro', data)
+        function(){
+            $.post("https://formspree.io/thiagoloschi@gmail.com",
+            {
+              name: $('#name').text(),
+              _replyto: $('#_replyto').text(),
+              message: $('#message').text()
+            },
+            function(data){
+                swal("Thanks for your Contact!", "I'll reply soon!", "success")
+            },function(data) {
+                swal("Something went wrong...", "Please try again.", "failed")
+            });
         });
     });
 });
