@@ -1,9 +1,12 @@
 $(document).ready(function() {
     swal("Sorry for the inconvenience!", "This website is being updated.", "warning");
 
+
+    //FullPage
     //alert($( window ).width());
 
-    $('#fullpage').fullpage();
+    if($( window ).width() > 768)
+        $('#fullpage').fullpage();
 
 	$('.text1').funnyText({
 		speed: 550,
@@ -33,6 +36,9 @@ $(document).ready(function() {
         color: '#00AEEF',
         direction: 'up'
     });
+
+
+    //Formspree
 
     $('form').submit(function( event ){
         event.preventDefault();
