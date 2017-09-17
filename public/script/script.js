@@ -3,12 +3,13 @@ $(document).ready(function() {
 
 
     //FullPage
-    //alert($( window ).width());
 
     if($( window ).width() > 768)
         $('#fullpage').fullpage();
 
-	$('.text1').funnyText({
+    //Funny text
+
+    $('.text1').funnyText({
 		speed: 550,
 		borderColor: '#00AEEF',
 		activeColor: '#2c2c2c',
@@ -84,4 +85,19 @@ $(document).ready(function() {
             });
         });
     });
+
+    // Show projects
+    $('.card-header').click( function () {
+		var path = $(this).data('id');
+		var desc = $(this).data('desc');
+		$(".modal-body #avatar").html('<img class="img-responsive" src="'+path+'" style="width: 100%"/>');
+		$(".modal-footer").text(desc);
+    });
+
+    $("#myModal").bind("mousewheel", function() {
+        return false;
+    });
+
+    $('.carousel').carousel()
 });
+

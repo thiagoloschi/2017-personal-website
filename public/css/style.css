@@ -171,6 +171,7 @@ section {
     font-size: 40px;
     padding: 30px;
     vertical-align: middle;
+    margin-bottom: 24px;
 }
 
 .showcase{
@@ -188,14 +189,65 @@ section {
 
 .card-header{
     margin: auto;
-    background-color: rgba(50, 50, 50, 0.8);;
+    background-color: rgba(50, 50, 50, 0.8);
     color: black;
-    height: 200px;
-    border-bottom: 1px solid red:
+    height: 240px;
+    border: 1px solid #2e2f33;
+    background-size: cover;
+    background-position: top;
+    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
 }
 
+#myModal {
+    position: absolute;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+}
 
+#myModal .regulation {
+    display: flex;
+}
 
+.modal-content {
+    height: 100vh;
+    width: 80vw;
+    background-color: white;
+    margin: auto;
+    align-self: center; 
+    border-radius: 0;
+}
+
+.description{
+    margin: auto;
+    padding: 0 56px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.description h3 {
+    color: #02b3e4;
+    font-size: 23px;
+    margin: 8px auto 16px auto;
+    text-align: center; 
+}
+
+.slideshow .carousel {
+    background-color: #fff;
+    height: 100%;
+    max-height: 40%;
+}
+
+#instmanager {
+    background-image: url('../img/instmanager.png');
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    line-height: 1;
+    height: 400px;
+    margin: auto;
+}
 
 
 /********************* Contact *********************/
