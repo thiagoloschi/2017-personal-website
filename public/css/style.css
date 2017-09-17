@@ -169,7 +169,7 @@ section {
 #projects h2{
     color: inherit;
     font-size: 40px;
-    padding: 30px;
+    padding: 15px;
     vertical-align: middle;
     margin-bottom: 24px;
 }
@@ -196,6 +196,11 @@ section {
     background-size: cover;
     background-position: top;
     box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+.card-header img{
+    height: inherit;
+    width: 100%;
 }
 
 #myModal {
@@ -251,16 +256,20 @@ section {
     max-height: 40%;
 }
 
-#instmanager {
-    background-image: url('../img/instmanager.png');
-}
-
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     line-height: 1;
-    height: 400px;
+    height: 70vh;
     margin: auto;
 }
 
+.otherprojects {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.otherprojects a {
+    color: black;
+}
 
 /********************* Contact *********************/
 

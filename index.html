@@ -15,203 +15,179 @@
         <link rel="stylesheet" href="public/css/style.css"/>
 
     </head>
-    <body>
+    <body ng-app="site" ng-controller="mainController">
         <div id="fullpage">
-            <section id="intro" class="section active">
-                <div class="skin">
-                    <div class="overlay">
-                        <div class="slogan wrapper">
-                            <div class="text1">
-                                I'm a
-                            </div>
-                            <div class="text2">
-                                Software
-                            </div>
-                            <div class="text3">
-                                Engineer
-                            </div>
-                            <div class="text4">
-                                &#xf103;
-                            </div>
-                        </div>
+    <section id="intro" class="section active">
+        <div class="skin">
+            <div class="overlay">
+                <div class="slogan wrapper">
+                    <div class="text1">
+                        I'm a
                     </div>
-                    <div class="language">
-                        <a href="pt-br.html"><i class="fa fa-globe" aria-hidden="true"></i> Visualizar em Portugês</a>
+                    <div class="text2">
+                        Software
                     </div>
-                </div>
-            </section>
-
-
-            <section id="about" class="section">
-                <div class="about-me">
-                    <div class="container">
-                        <img class="img-circle" src="public/img/profile.png" />
-                        <h2>Thiago Loschi</h2>
-                        <p>My name is <strong>Thiago Loschi</strong> and I'm passionate about building fast, scalable and reliable applications. I've been working with Web Development in the past 2 years and I'm always seeking to learning something new. Currently, I'm a Software Engineer at <a href="https://quintoandar.com.br"><strong>QuintoAndar</strong></a> and live in São Paulo, Brazil.</p>
-                        <div class="row info">
-                            <div class="col-sm-6">
-                                <h3>Education</h4>
-                                <div class="university">
-                                    <p><strong>B.S. Internet Systems</strong><br/>
-                                    Southwest Minas Gerais Federal Institute</p>
-                                    <p><strong>B.S. Computer Science (International Mobility)</strong><br/>
-                                    California State University East Bay</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 skills">
-                                <h3>Main Skills</h4>
-                                <p><strong>Javascript: </strong> Node.js, Angular.js, React, Redux</p>
-                                <p><strong>Python:</strong> Django, Flask</p>
-                                <p><strong>Ruby:</strong> Rails</p>
-                                <p><strong>Java: </strong>JPA, JSP, JSF, EJB</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <a target="_blank" href="https://linkedin.com/in/thiagoloschi"><button class="btn btn-lg but" type="submit">Linkedin <i class="fa fa-linkedin" aria-hidden="true"></i></button></a>
-                            </div>
-                            <div class="col-sm-6">
-                                <a href="public/files/EnglishResume.pdf"><button class="btn btn-lg but" type="submit">Resume <i class="fa fa-envelope-o" aria-hidden="true"></i></button></a>
-                            </div>
-                        </div>
-
+                    <div class="text3">
+                        Engineer
                     </div>
-
-                </div>
-            </section>
-
-
-            <section id="projects" class="section">
-                        <h2>My Latest Projects</h2>
-                        <div class="showcase container">
-                            <div class="row">
-                                <div class="col-sm-4 wow zoomIn card">
-                                    <div id="instmanager" class="card-header" role="button" data-desc="Follow and unfollow friends and see who follows you back." data-id="public/img/instmanager.png" data-toggle="modal" data-target="#myModal" href="#">
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 card">
-                                    <div class="card-header">
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 card">
-                                    <div class="card-header">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-4 wow zoomIn card">
-                                    <div class="card-header">
- 
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 card">
-                                    <div class="card-header">
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 card">
-                                    <div class="card-header">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            </section>
-
-            <section id="contact" class="section wrapper">
-                <h2>Get In Touch</h2>
-                <div class="container">
-                    <form class="contact-form">
-                        <div class="col-sm-6 input-field">
-                          <input class="inpt" type="text" id="name" name="name" placeholder="Your name *" required="" autocomplete="off">
-                        </div>
-                        <div class="col-sm-6 input-field">
-                          <input class="inpt" type="email" id="email"  name="email" placeholder="Your email *" required="" autocomplete="off">
-                        </div>
-                        <div class="col-sm-12 input-field">
-                          <textarea class="inpt" id="message" name="message" rows="7" placeholder="Your message *" required=""></textarea>
-                        </div>
-                        <div class="col-md-12 input-field col s12">
-        					<button class="btn btn-lg but" value="Send">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-        				</div>
-                    </form>
-                </div>
-
-                <div class="social row">
-
-                    <div class="brand-footer col-md-6">
-                        <span>© 2014-2017 Thiago Loschi. All Rights Reserved.</span>
-                    </div>
-
-                    <div class="col-md-6">
-                        <ul class="icons">
-                            <li><a target="_blank" href="https://plus.google.com/+thiagoloschi"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a target="_blank" href="https://www.linkedin.com/in/thiagoloschi"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a target="_blank" href="https://github.com/thiagoloschi"><i class="fa fa-github"></i></a></li>
-                            <li><a href="https://www.instagram.com/thiagoloschi_" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="https://www.facebook.com/thiagoloschi" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </section>
-        </div>
-         <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="regulation">
-                <div class="modal-content">
-                    <div class="slideshow">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                            <img src="public/img/main.png" alt="Los Angeles">
-                            </div>
-
-                            <div class="item">
-                            <img src="public/img/stats.png" alt="Chicago">
-                            </div>
-
-                            <div class="item">
-                            <img src="public/img/relationships.png" alt="New York">
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                    <div class="description">
-                        <h3>Instmanager</h3>
-                        <p><strong>Description: </strong>InstManager is an Instagram client created with the unique purpose of entertaining Instagram users by providing cool insights and usage statistics from their Instagram accounts. Users will be able to see which of their friends follow them back and will have the ability to follow and unfollow other users.</p>
-                        <p><strong>Technologies: </strong>This application utilizes node.js, express.js, mongodb and angular.js among other technologies.</p>
-                        <p><a target="_blank" href="https://instmanager.herokuapp.com.br"><strong>View online</strong></a> or <a target="_blank" href="https://instmanager.herokuapp.com.br"><strong>View source code</strong></a></p>
+                    <div class="text4">
+                        &#xf103;
                     </div>
                 </div>
             </div>
+            <div class="language">
+                <a href="pt-br.html"><i class="fa fa-globe" aria-hidden="true"></i> Visualizar em Portugês</a>
+            </div>
         </div>
+    </section>
+
+
+    <section id="about" class="section">
+        <div class="about-me">
+            <div class="container">
+                <img class="img-circle" src="public/img/profile.png" />
+                <h2>Thiago Loschi</h2>
+                <p>My name is <strong>Thiago Loschi</strong> and I'm passionate about building fast, scalable and reliable applications. I've been working with Web Development in the past 2 years and I'm always seeking to learning something new. Currently, I'm a Software Engineer at <a href="https://quintoandar.com.br"><strong>QuintoAndar</strong></a> and live in São Paulo, Brazil.</p>
+                <div class="row info">
+                    <div class="col-sm-6">
+                        <h3>Education</h4>
+                        <div class="university">
+                            <p><strong>B.S. Internet Systems</strong><br/>
+                            Southwest Minas Gerais Federal Institute</p>
+                            <p><strong>B.S. Computer Science (International Mobility)</strong><br/>
+                            California State University East Bay</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 skills">
+                        <h3>Main Skills</h4>
+                        <p><strong>Javascript: </strong> Node.js, Angular.js, React, Redux</p>
+                        <p><strong>Python:</strong> Django, Flask</p>
+                        <p><strong>Ruby:</strong> Rails</p>
+                        <p><strong>Java: </strong>JPA, JSP, JSF, EJB</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a target="_blank" href="https://linkedin.com/in/thiagoloschi"><button class="btn btn-lg but" type="submit">Linkedin <i class="fa fa-linkedin" aria-hidden="true"></i></button></a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a a target="_blank" href="public/files/EnglishResume.pdf"><button class="btn btn-lg but" type="submit">Resume <i class="fa fa-envelope-o" aria-hidden="true"></i></button></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="projects" class="section">
+        <h2>Main Latest Projects</h2>
+        <div class="showcase container">
+            <div class="row">
+                <div class="col-sm-4 wow zoomIn card" ng-repeat="project in projects">
+                    <div ng-click="click(this.project)" class="card-header" role="button" 
+                        data-toggle="modal" data-target="#myModal">   
+                        <img ng-if"project.title != ''" src="{{project.cover}}" />                
+                    </div>
+                </div>
+            </div>
+            <div class="otherprojects" >
+                <a target="_blank" href="https://github.com/thiagoloschi">See more projects on Github</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section wrapper">
+        <h2>Get In Touch</h2>
+        <div class="container">
+            <form class="contact-form">
+                <div class="col-sm-6 input-field">
+                    <input class="inpt" type="text" id="name" name="name" placeholder="Your name *" required="" autocomplete="off">
+                </div>
+                <div class="col-sm-6 input-field">
+                    <input class="inpt" type="email" id="email"  name="email" placeholder="Your email *" required="" autocomplete="off">
+                </div>
+                <div class="col-sm-12 input-field">
+                    <textarea class="inpt" id="message" name="message" rows="7" placeholder="Your message *" required=""></textarea>
+                </div>
+                <div class="col-md-12 input-field col s12">
+                    <button class="btn btn-lg but" value="Send">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                </div>
+            </form>
+        </div>
+
+        <div class="social row">
+
+            <div class="brand-footer col-md-6">
+                <span>© 2014-2017 Thiago Loschi. All Rights Reserved.</span>
+            </div>
+
+            <div class="col-md-6">
+                <ul class="icons">
+                    <li><a target="_blank" href="https://plus.google.com/+thiagoloschi"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/thiagoloschi"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/thiagoloschi"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/thiagoloschi_" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/thiagoloschi" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+    <!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <div class="regulation">
+        <div class="modal-content">
+            <div class="slideshow">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol> 
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                         <div class="item active">
+                            <img src="public/img/{{picture}}" alt="Los Angeles">
+                        </div>   
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="description">
+                <h3>{{selected.title}}</h3>
+                <p><strong>Description: </strong><span>{{description}}</span></p>
+                <p><strong>Technologies: </strong><span>{{technologies}}</span></p>
+                <p><span ng-if="github != '' "><a target="_blank" href="{{site}}"><strong>View online</strong></a></span><span ng-if="github != '' "> or <a target="_blank" href="{{github}}"><strong>View source code</strong></a></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+        
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript" src="public/assets/fullPage/jquery.fullPage.js"></script>
         <script type="text/javascript" src="public/assets/funnyText/jquery.funnyText.js"></script>
         <script src="public/assets/sweetalert/dist/sweetalert.min.js"></script>
         <script type="text/javascript" src="public/assets/funnyText/jquery.funnyText.js"></script>
+        <script type="text/javascript" src="public/assets/angular/angular.min.js"></script>
+        <script type="text/javascript" src="public/assets/angular-route/angular-route.min.js"></script>
         <script type="text/javascript" src="public/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="public/controllers/main.js"></script>
         <script type="text/javascript" src="public/script/script.js"></script>
     </body>
 </html>
