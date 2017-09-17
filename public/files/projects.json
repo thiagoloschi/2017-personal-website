@@ -2,11 +2,13 @@
     {
         "title": "QuintoAndar Tenants App",
         "cover": "public/img/pwa.png",
-        "description": "As part of my current job, I help to develop the company's main app which being entirely redesigned. My latests contributions were the alert creation feature, known by Homes flow.",
+        "description": "As part of my current job, I help to develop the company's main app which is being entirely redesigned. My latests contributions were the alert creation feature, known by Homes flow.",
         "technologies": "PWA, React, Redux and Google's Material-ui",
         "site": "https://pwa.quintoandar.com.br",
         "git": "",
-        "pictures": [""]
+        "pictures": [
+            "public/img/firstaccess.png", "public/img/discovery.png", "public/img/pwa.png", "public/img/filters.png"
+        ]
     },
     {
         "title": "Instmanager",
@@ -16,7 +18,7 @@
         "site": "https://instmanager.herokuapp.com",
         "git": "https://github.com/thiagoloschi/instmanager", 
         "pictures": [
-            "main.png", "stats.png", "relationships.png"
+            "public/img/instmanager.png", "public/img/main.png", "public/img/openedpicture.png", "public/img/stats.png", "public/img/relationships.png"
         ]
     },
     {
@@ -26,7 +28,9 @@
         "technologies": "Ionic framework, many Cordova plugins, Angularjs, Gulp, SCSS and an api in Ruby on Rails. ",
         "site": "",
         "git": "",
-        "pictures": [""]
+        "pictures": [
+            "public/img/ionic.png", "public/img/post.png", "public/img/add.png", "public/img/cut.png", "public/img/edit.png", "public/img/finish.png"
+        ]
     },
     {
         "title": "Quinto Landing Page",
@@ -35,7 +39,9 @@
         "technologies": "Boostrap for griding, pure js for input validation, some jquery to handle the events and SCSS for the css.",
         "site": "http://thiagoloschi.com/quintoandar",
         "git": "https://github.com/thiagoloschi/QuintoLandingPage",
-        "pictures": [""]
+        "pictures": [
+            "public/img/quinto.png", "public/img/quintomobile.png", "public/img/quintomenu.png", "public/img/quintofooter.png" 
+        ]
     },
     {
         "title": "This website",
@@ -45,7 +51,7 @@
         "site": "http://thiagoloschi.com",
         "git": "https://github.com/thiagoloschi/thiagoloschi.github.com", 
         "pictures": [
-            ""
+            "public/img/site.png", "public/img/about.png", "public/img/projects.png", "public/img/contact.png"
         ]
     }
 ]
