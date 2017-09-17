@@ -1,0 +1,51 @@
+[
+    {
+        "title": "QuintoAndar Tenants App",
+        "cover": "public/img/pwa.png",
+        "description": "As part of my current job, I help to develop the company's main app which being entirely redesigned. My latests contributions were the alert creation feature, known by Homes flow.",
+        "technologies": "PWA, React, Redux and Google's Material-ui",
+        "site": "https://pwa.quintoandar.com.br",
+        "git": "",
+        "pictures": [""]
+    },
+    {
+        "title": "Instmanager",
+        "cover": "public/img/instmanager.png",
+        "description": "InstManager is an Instagram client created with the unique purpose of entertaining Instagram users by providing cool insights and usage statistics from their Instagram accounts. Users will be able to see which of their friends follow them back and will have the ability to follow and unfollow other users.",        
+        "technologies" : "This application utilizes node.js, express.js, mongodb and angular.js among other technologies.",
+        "site": "https://instmanager.herokuapp.com",
+        "git": "https://github.com/thiagoloschi/instmanager", 
+        "pictures": [
+            "main.png", "stats.png", "relationships.png"
+        ]
+    },
+    {
+        "title": "Ionic App",
+        "cover": "public/img/ionic.png",
+        "description": "While working on the previous company, I helped to build a social network app, with tons of nice features.",
+        "technologies": "Ionic framework, many Cordova plugins, Angularjs, Gulp, SCSS and an api in Ruby on Rails. ",
+        "site": "",
+        "git": "",
+        "pictures": [""]
+    },
+    {
+        "title": "Quinto Landing Page",
+        "cover": "public/img/quinto.png",
+        "description": "This is the redesign of QuintoAndar's landing page in an attempting to build a more mobile friendly approach, assuring responsiveness, mainly when resizing the window. In this version, made as a challenge, I also implemented a new trend menu and a telephone number mask solution in pure JS, to handle the 9th digit.",
+        "technologies": "Boostrap for griding, pure js for input validation, some jquery to handle the events and SCSS for the css.",
+        "site": "http://thiagoloschi.com/quintoandar",
+        "git": "https://github.com/thiagoloschi/QuintoLandingPage",
+        "pictures": [""]
+    },
+    {
+        "title": "This website",
+        "cover": "public/img/site.png",
+        "description": "My personal portfolio already had a few different faces. This is the 2017 version of my website.",        
+        "technologies" : "This website was built using HTML5, CSS3, Flexbox, SCSS, jQuery, WOW, animation, normalize, FullPage, FunnyText among others.",
+        "site": "http://thiagoloschi.com",
+        "git": "https://github.com/thiagoloschi/thiagoloschi.github.com", 
+        "pictures": [
+            ""
+        ]
+    }
+]

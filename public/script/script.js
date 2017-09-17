@@ -1,11 +1,12 @@
 $(document).ready(function() {
-    swal("Sorry for the inconvenience!", "This website is being updated.", "warning");
-
 
     //FullPage
 
-    if($( window ).width() > 768)
+    if($( window ).width() > 768) { 
         $('#fullpage').fullpage();
+    } else {
+        swal("Sorry for the inconvenience!", "This website is being updated.", "warning");
+    }
 
     //Funny text
 
@@ -86,18 +87,10 @@ $(document).ready(function() {
         });
     });
 
-    // Show projects
-    $('.card-header').click( function () {
-		var path = $(this).data('id');
-		var desc = $(this).data('desc');
-		$(".modal-body #avatar").html('<img class="img-responsive" src="'+path+'" style="width: 100%"/>');
-		$(".modal-footer").text(desc);
-    });
+    // $("#myModal").bind("mousewheel", function() {
+    //     return false;
+    // });
 
-    $("#myModal").bind("mousewheel", function() {
-        return false;
-    });
-
-    $('.carousel').carousel()
+     
 });
 
