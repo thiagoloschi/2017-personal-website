@@ -125,9 +125,9 @@
 
             <div class="col-md-6">
                 <ul class="icons">
-                    <li><a target="_blank" href="https://plus.google.com/+thiagoloschi"><i class="fa fa-google-plus"></i></a></li>
                     <li><a target="_blank" href="https://www.linkedin.com/in/thiagoloschi"><i class="fa fa-linkedin"></i></a></li>
                     <li><a target="_blank" href="https://github.com/thiagoloschi"><i class="fa fa-github"></i></a></li>
+                    <li><a target="_blank" href="https://codepen.io/thiagoloschi/"><i class="fa fa-codepen"></i></a></li>
                     <li><a href="https://www.instagram.com/thiagoloschi_" target="_blank"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="https://www.facebook.com/thiagoloschi" target="_blank"><i class="fa fa-facebook"></i></a></li>
                 </ul>
@@ -139,22 +139,17 @@
 
     <!-- Modal -->
 <div class="modal fade" id="myModal" role="dialog">
-    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <button type="button" class="close" data-dismiss="modal" ng-click="reset()">&times;</button>
     <div class="regulation">
         <div class="modal-content">
             <div class="slideshow">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                      <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
                     </ol> 
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
-                         <div class="item active">
-                            <img src="public/img/{{picture}}" alt="Los Angeles">
-                        </div>   
                     </div>
                     <!-- Left and right controls -->
                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -169,9 +164,9 @@
             </div>
             <div class="description">
                 <h3>{{selected.title}}</h3>
-                <p><strong>Description: </strong><span>{{description}}</span></p>
-                <p><strong>Technologies: </strong><span>{{technologies}}</span></p>
-                <p><span ng-if="github != '' "><a target="_blank" href="{{site}}"><strong>View online</strong></a></span><span ng-if="github != '' "> or <a target="_blank" href="{{github}}"><strong>View source code</strong></a></span></p>
+                <p><strong>Description: </strong><span>{{selected.description}}</span></p>
+                <p><strong>Technologies: </strong><span>{{selected.technologies}}</span></p>
+                <p><span ng-if="selected.site != '' "><a target="_blank" href="{{selected.site}}"><strong>View online</strong></a></span><span ng-if="selected.git != '' "> or <a target="_blank" href="{{selected.git}}"><strong>View source code</strong></a></span></p>
             </div>
         </div>
     </div>
