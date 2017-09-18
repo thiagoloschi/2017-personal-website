@@ -2,7 +2,7 @@
     {
         "title": "QuintoAndar Tenants App",
         "cover": "public/img/pwa.png",
-        "description": "As part of my current job, I help to develop the company's main app which is being entirely redesigned. My latests contributions were the alert creation feature, known by Homes flow.",
+        "description": "As part of my current job, I help to develop the company's main app which is being entirely redesigned. My latest contributions were the alert creation feature, known by Homes flow.",
         "technologies": "PWA, React, Redux and Google's Material-ui",
         "site": "https://pwa.quintoandar.com.br",
         "git": "",

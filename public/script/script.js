@@ -5,7 +5,7 @@ $(document).ready(function() {
     if($( window ).width() > 768) { 
         $('#fullpage').fullpage();
     } else {
-        swal("Sorry for the inconvenience!", "This website is being updated.", "warning");
+        swal("Sorry for the inconvenience!", "This website is being updated. It can be seen fully working in its desktop version.", "warning");
     }
 
     //Funny text
@@ -87,13 +87,8 @@ $(document).ready(function() {
         });
     });
 
-
-    
-
-    // $("#myModal").bind("mousewheel", function() {
-    //     return false;
-    // });
-
-     
+    $("#myModal").bind("mousewheel", function() {
+        return false;
+    });
 });
 
