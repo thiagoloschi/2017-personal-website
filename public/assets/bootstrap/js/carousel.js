@@ -145,7 +145,6 @@
     if ($.support.transition && this.$element.hasClass('slide')) {
       $next.addClass(type)
       if (typeof $next == 'object' && $next.length) $next[0].offsetWidth // force reflow
-      // $next[0].offsetWidth // force reflow
       $active.addClass(direction)
       $next.addClass(direction)
       $active
