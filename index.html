@@ -13,147 +13,139 @@
         <link rel="stylesheet" type="text/css" href="public/assets/fullPage/jquery.fullPage.css"/>
         <link rel="stylesheet" type="text/css" href="public/assets/funnyText/jquery.funnyText.css" />
         <link rel="stylesheet" href="public/css/style.css"/>
-
     </head>
     <body ng-app="site" ng-controller="mainController" ng-cloak>
         <div id="fullpage">
-    <section id="intro" class="section active">
-        <div class="skin">
-            <div class="overlay">
-                <div class="slogan wrapper">
-                    <div class="text1">
-                        I'm a
-                    </div>
-                    <div class="text2">
-                        Software
-                    </div>
-                    <div class="text3">
-                        Engineer
-                    </div>
-                    <div class="text4">
-                        &#xf103;
-                    </div>
-                </div>
-            </div>
-            <div class="language">
-                <a href="pt-br.html"><i class="fa fa-globe" aria-hidden="true"></i> Visualizar em Portugês</a>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="about" class="section">
-        <div class="about-me">
-            <div class="container">
-                <img class="img-circle" src="public/img/profile.png" />
-                <h2>Thiago Loschi</h2>
-                <p>My name is <strong>Thiago Loschi</strong> and I'm passionate about building fast, scalable and reliable applications. I've been working with Web Development in the past 2 years and I'm always seeking to learning something new. Currently, I'm a Software Engineer at <a href="https://quintoandar.com.br"><strong>QuintoAndar</strong></a> and live in São Paulo, Brazil.</p>
-                <div class="row info">
-                    <div class="col-sm-6">
-                        <h3>Education</h4>
-                        <div class="university">
-                            <p><strong>B.S. Internet Systems</strong><br/>
-                            Southwest Minas Gerais Federal Institute</p>
-                            <p><strong>B.S. Computer Science (International Mobility)</strong><br/>
-                            California State University East Bay</p>
+            <section id="intro" class="section active">
+                <div class="skin">
+                    <div class="overlay">
+                        <div class="slogan wrapper">
+                            <div class="text1">
+                                I'm a
+                            </div>
+                            <div class="text2">
+                                Software
+                            </div>
+                            <div class="text3">
+                                Engineer
+                            </div>
+                            <div class="text4">
+                                &#xf103;
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 skills">
-                        <h3>Main Skills</h4>
-                        <p><strong>Javascript: </strong> Node.js, Angular.js, React, Redux</p>
-                        <p><strong>Python:</strong> Django, Flask</p>
-                        <p><strong>Ruby:</strong> Rails</p>
-                        <p><strong>Java: </strong>JPA, JSP, JSF, EJB</p>
+                    <div class="language">
+                        <a href="pt-br.html"><i class="fa fa-globe" aria-hidden="true"></i> Visualizar em Portugês</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <a target="_blank" href="https://linkedin.com/in/thiagoloschi"><button class="btn btn-lg but" type="submit">Linkedin <i class="fa fa-linkedin" aria-hidden="true"></i></button></a>
+            </section>
+
+            <section id="about" class="section">
+                <div class="about-me">
+                    <div class="container">
+                        <img class="img-circle" src="public/img/profile.png" />
+                        <h2>Thiago Loschi</h2>
+                        <p>My name is <strong>Thiago Loschi</strong> and I'm passionate about building fast, scalable and reliable applications. I've been working with Web Development in the past 2 years and I'm always seeking to learning something new. Currently, I'm a Software Engineer at <a href="https://quintoandar.com.br"><strong>QuintoAndar</strong></a> and live in São Paulo, Brazil.</p>
+                        <div class="row info">
+                            <div class="col-sm-6">
+                                <h3>Education</h4>
+                                <div class="university">
+                                    <p><strong>B.S. Internet Systems</strong><br/>
+                                    Southwest Minas Gerais Federal Institute</p>
+                                    <p><strong>B.S. Computer Science (International Mobility)</strong><br/>
+                                    California State University East Bay</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 skills">
+                                <h3>Main Skills</h4>
+                                <p><strong>Javascript: </strong> Node.js, Angular.js, React, Redux</p>
+                                <p><strong>Python:</strong> Django, Flask</p>
+                                <p><strong>Ruby:</strong> Rails</p>
+                                <p><strong>Java: </strong>JPA, JSP, JSF, EJB</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a target="_blank" href="https://linkedin.com/in/thiagoloschi"><button class="btn btn-lg but" type="submit">Linkedin <i class="fa fa-linkedin" aria-hidden="true"></i></button></a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a a target="_blank" href="public/files/EnglishResume.pdf"><button class="btn btn-lg but" type="submit">Resume <i class="fa fa-envelope-o" aria-hidden="true"></i></button></a>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-sm-6">
-                        <a a target="_blank" href="public/files/EnglishResume.pdf"><button class="btn btn-lg but" type="submit">Resume <i class="fa fa-envelope-o" aria-hidden="true"></i></button></a>
+
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>Main Latest Projects</h2>
+                <div class="showcase container">
+                    <div class="row">
+                        <div class="col-sm-4 wow zoomIn card" ng-repeat="project in projects">
+                            <div ng-click="click(this.project)" class="card-header" role="button" 
+                                data-toggle="modal" data-target="#myModal">   
+                                <img ng-if"project.title != ''" src="{{project.cover}}" />                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="otherprojects" >
+                        <a target="_blank" href="https://github.com/thiagoloschi">See more projects on Github</a>
                     </div>
                 </div>
+            </section>
 
-            </div>
+            <section id="contact" class="section wrapper">
+                <h2>Get In Touch</h2>
+                <div class="container">
+                    <form class="contact-form">
+                        <div class="col-sm-6 input-field">
+                            <input class="inpt" type="text" id="name" name="name" placeholder="Your name *" required="" autocomplete="off">
+                        </div>
+                        <div class="col-sm-6 input-field">
+                            <input class="inpt" type="email" id="email"  name="email" placeholder="Your email *" required="" autocomplete="off">
+                        </div>
+                        <div class="col-sm-12 input-field">
+                            <textarea class="inpt" id="message" name="message" rows="7" placeholder="Your message *" required=""></textarea>
+                        </div>
+                        <div class="col-md-12 input-field col s12">
+                            <button class="btn btn-lg but" value="Send">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
 
+                <div class="social row">
+                    <div class="brand-footer col-md-6">
+                        <span>© 2014-2017 Thiago Loschi. All Rights Reserved.</span>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="icons">
+                            <li><a target="_blank" href="https://www.linkedin.com/in/thiagoloschi"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a target="_blank" href="https://github.com/thiagoloschi"><i class="fa fa-github"></i></a></li>
+                            <li><a target="_blank" href="https://codepen.io/thiagoloschi/"><i class="fa fa-codepen"></i></a></li>
+                            <li><a href="https://www.instagram.com/thiagoloschi_" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/thiagoloschi" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
 
-
-    <section id="projects" class="section">
-        <h2>Main Latest Projects</h2>
-        <div class="showcase container">
-            <div class="row">
-                <div class="col-sm-4 wow zoomIn card" ng-repeat="project in projects">
-                    <div ng-click="click(this.project)" class="card-header" role="button" 
-                        data-toggle="modal" data-target="#myModal">   
-                        <img ng-if"project.title != ''" src="{{project.cover}}" />                
+        <!-- Modal -->
+        <div ng-cloak class="modal fade" id="myModal" role="dialog">
+            <button type="button" class="close" data-dismiss="modal" ng-click="reset()">&times;</button>
+            <div class="regulation">
+                <div class="modal-content">
+                    <div class="slideshow"></div>
+                    <div class="description">
+                        <h3>{{selected.title}}</h3>
+                        <p><strong>Description: </strong><span>{{selected.description}}</span></p>
+                        <p><strong>Technologies: </strong><span>{{selected.technologies}}</span></p>
+                        <p><span ng-if="selected.site != '' "><a target="_blank" href="{{selected.site}}"><strong>View online</strong></a></span><span ng-if="selected.git != '' "> or <a target="_blank" href="{{selected.git}}"><strong>View source code</strong></a></span></p>
                     </div>
                 </div>
             </div>
-            <div class="otherprojects" >
-                <a target="_blank" href="https://github.com/thiagoloschi">See more projects on Github</a>
-            </div>
         </div>
-    </section>
-
-    <section id="contact" class="section wrapper">
-        <h2>Get In Touch</h2>
-        <div class="container">
-            <form class="contact-form">
-                <div class="col-sm-6 input-field">
-                    <input class="inpt" type="text" id="name" name="name" placeholder="Your name *" required="" autocomplete="off">
-                </div>
-                <div class="col-sm-6 input-field">
-                    <input class="inpt" type="email" id="email"  name="email" placeholder="Your email *" required="" autocomplete="off">
-                </div>
-                <div class="col-sm-12 input-field">
-                    <textarea class="inpt" id="message" name="message" rows="7" placeholder="Your message *" required=""></textarea>
-                </div>
-                <div class="col-md-12 input-field col s12">
-                    <button class="btn btn-lg but" value="Send">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-                </div>
-            </form>
-        </div>
-
-        <div class="social row">
-
-            <div class="brand-footer col-md-6">
-                <span>© 2014-2017 Thiago Loschi. All Rights Reserved.</span>
-            </div>
-
-            <div class="col-md-6">
-                <ul class="icons">
-                    <li><a target="_blank" href="https://www.linkedin.com/in/thiagoloschi"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a target="_blank" href="https://github.com/thiagoloschi"><i class="fa fa-github"></i></a></li>
-                    <li><a target="_blank" href="https://codepen.io/thiagoloschi/"><i class="fa fa-codepen"></i></a></li>
-                    <li><a href="https://www.instagram.com/thiagoloschi_" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/thiagoloschi" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                </ul>
-            </div>
-        </div>
-
-    </section>
-</div>
-
-    <!-- Modal -->
-<div ng-cloak class="modal fade" id="myModal" role="dialog">
-    <button type="button" class="close" data-dismiss="modal" ng-click="reset()">&times;</button>
-    <div class="regulation">
-        <div class="modal-content">
-            <div class="slideshow"></div>
-            <div class="description">
-                <h3>{{selected.title}}</h3>
-                <p><strong>Description: </strong><span>{{selected.description}}</span></p>
-                <p><strong>Technologies: </strong><span>{{selected.technologies}}</span></p>
-                <p><span ng-if="selected.site != '' "><a target="_blank" href="{{selected.site}}"><strong>View online</strong></a></span><span ng-if="selected.git != '' "> or <a target="_blank" href="{{selected.git}}"><strong>View source code</strong></a></span></p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript" src="public/assets/fullPage/jquery.fullPage.js"></script>
         <script type="text/javascript" src="public/assets/funnyText/jquery.funnyText.js"></script>
@@ -165,5 +157,12 @@
         <script type="text/javascript" src="app.js"></script>
         <script type="text/javascript" src="public/controllers/main.js"></script>
         <script type="text/javascript" src="public/script/script.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96337282-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-96337282-1');
+        </script>
     </body>
 </html>

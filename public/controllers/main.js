@@ -9,6 +9,7 @@ site.controller('mainController', function($scope, $http){
     });
 
     $scope.click = function (data) {
+        resetCarousel();
         loadCarousel();
         $scope.selected = data;
         appendPictures(data.pictures);
