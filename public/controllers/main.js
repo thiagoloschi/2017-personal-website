@@ -1,7 +1,6 @@
 var site = angular.module('site');
 
 site.controller('mainController', function($scope, $http){
-    console.log('Controller running...');
     $scope.showModal = false;
 
     $http.get('/public/files/projects.json').then(function (response) {
@@ -11,6 +10,7 @@ site.controller('mainController', function($scope, $http){
 
     $scope.click = function (data) {
         loadCarousel();
+        $scope.selected = data;
         appendPictures(data.pictures);
     }
 
