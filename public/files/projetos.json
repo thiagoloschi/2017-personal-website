@@ -1,0 +1,57 @@
+[
+    {
+        "title": "QuintoAndar Tenants App",
+        "cover": "public/img/pwa.png",
+        "description": "Como parte do meu trabalho atual, ajudo a desenvolver o aplicativo principal da empresa, que foi completamente atualizado para uma versão em PWA. Algumas de minhas últimas contribuições foram o fluxo de alertas do Homes, mostrar propostas no anúncio e a criação de alertas de disponibilidade de horário para visitas.",
+        "technologies": "React, Redux, Webpack, Eslint, Jest, Enzyme, Styled-components, and Google's Material-ui and Service Worker",
+        "site": "https://pwa.quintoandar.com.br",
+        "git": "",
+        "pictures": [
+            "public/img/firstaccess.png", "public/img/discovery.png", "public/img/pwa.png", "public/img/filters.png"
+        ]
+    },
+    {
+        "title": "Instmanager",
+        "cover": "public/img/instmanager.png",
+        "description": "InstManager é um cliente para Instagram, criado com o propósito único de entreter usuários do Instagram, providenciando estatísticas de uso e algumas outras informaçõe exclusivas accounts fornecidas pela API do Instragram. Usuários também podem ver quem os seguem de volta, e quem eles não seguem de volta, em uma tela que torna tudo muito mais prático.",        
+        "technologies" : "A aplicação usa Nodejs, Expressjs, MongoDB e Angularjs, entre outras tecnologias.",
+        "site": "https://instmanager.herokuapp.com",
+        "git": "https://github.com/thiagoloschi/instmanager", 
+        "pictures": [
+            "public/img/instmanager.png", "public/img/main.png", "public/img/openedpicture.png", "public/img/stats.png", "public/img/relationships.png"
+        ]
+    },
+    {
+        "title": "Ionic App",
+        "cover": "public/img/ionic.png",
+        "description": "Enquanto trabalhava na empresa anterior, ajudei a contruir um aplicativo de rede social para uma empresa multinacional. O app contava com muitas funções legais, como editor de fotos, compartilhamento com outras redes sociais e um feed exclusivo",
+        "technologies": "Ionic framework, muitos plugins Cordova, Angularjs, Gulp, SCSS e uma API construída em Ruby on Rails. ",
+        "site": "",
+        "git": "",
+        "pictures": [
+            "public/img/ionic.png", "public/img/post.png", "public/img/add.png", "public/img/cut.png", "public/img/edit.png", "public/img/finish.png"
+        ]
+    },
+    {
+        "title": "Quinto Landing Page",
+        "cover": "public/img/quinto.png",
+        "description": "Este é um desenho alternativo da página principal do antigo site do QuintoAndar. Na tentativa de construir um design mais mobile-friendly, garantindo responsividade, principalmente ao redimensionar a janela. Nesta versão, feita como um desafio, eu tambem implementei um novo design de menu, e uma solução de validação de máscara de telefone em JS puro, pronta para funcionar também com telefones com 9 dígitos.",
+        "technologies": "Boostrap para griding, JS puro para a validação dos inputs, Jquery para cuidar dos eventos e SCSS para o estilo.",
+        "site": "http://thiagoloschi.com/quintoandar",
+        "git": "https://github.com/thiagoloschi/QuintoLandingPage",
+        "pictures": [
+            "public/img/quinto.png", "public/img/quintomobile.png", "public/img/quintomenu.png", "public/img/quintofooter.png" 
+        ]
+    },
+    {
+        "title": "This website",
+        "cover": "public/img/site.png",
+        "description": "Minha página pessoal já teve umas carinhas diferentes. Essa é a versão de 2017.",        
+        "technologies" : "Esse site foi construído usando HTML5, CSS3, Flexbox, SCSS, Jquery, Angularjs, WOW, Animation, Normalize, FullPage, FunnyText e algumas outras tecnologias.",
+        "site": "http://thiagoloschi.com",
+        "git": "https://github.com/thiagoloschi/thiagoloschi.github.com", 
+        "pictures": [
+            "public/img/site.png", "public/img/about.png", "public/img/projects.png", "public/img/contact.png"
+        ]
+    }
+]
