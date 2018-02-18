@@ -1,11 +1,16 @@
 $(document).ready(function() {
-    swal("Desculpe o transtorno!", "Este site está sendo atualizado.", "warning");
 
-    //alert($( window ).width());
+    //FullPage
 
-    $('#fullpage').fullpage();
+    if($( window ).width() > 768) { 
+        $('#fullpage').fullpage();
+    } else {
+        swal("Sorry for the inconvenience!", "This website is being updated. It can be seen fully working in its desktop version.", "warning");
+    }
 
-	$('.text1').funnyText({
+    //Funny text
+
+    $('.text1').funnyText({
 		speed: 550,
 		borderColor: '#00AEEF',
 		activeColor: '#2c2c2c',
@@ -34,16 +39,21 @@ $(document).ready(function() {
         direction: 'up'
     });
 
+
+    //Formspree
+
     $('form').submit(function( event ){
         event.preventDefault();
 
         swal({
-          title: "Já terminou?",
+          title: "Terminou de escrever?",
           text: "Por favor, leve o tempo que precisar!",
           type: "info",
           showCancelButton: true,
           closeOnConfirm: false,
           showLoaderOnConfirm: true,
+          confirmButtonText: "Sim, enviar",
+          cancelButtonText: "Não, voltar"
         },
         function(){
             var name = $('#name').val();
@@ -51,7 +61,7 @@ $(document).ready(function() {
             var message = $('#message').val();
 
             if(name.value == "" || email.value == "" || message.value == "") {
-              swal("Há algo de errado...", "Por favor, preencha todos os campos.", "error");
+              swal("Campos vazios...", "Por favor, preencha todos os campos..", "error");
               return false;
             }
 
@@ -67,15 +77,21 @@ $(document).ready(function() {
                 dataType:"json",
                 success:function() {
                     console.log('success');
-                    swal("Obrigado por seu contato!", "Responderei em breve.", "success")
+                    swal("Obrigado pelo contato!", "Responderei em breve.", "success")
                     $('#name').val('');
                     $('#email').val('');
                     $('#message').val('');
                 },
                 error: function(){
-                    swal("Há algo de errado...", "Por favor, tente novamente.", "error");
+                    swal("Alguma coisa deu errado...", "Por favor, tente novamente.", "error");
                 }
             });
-        });
+        }  
+    );
+    });
+
+    $("#myModal").bind("mousewheel", function() {
+        return false;
     });
 });
+

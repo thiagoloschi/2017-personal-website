@@ -5,7 +5,10 @@ site.controller('mainController', function($scope, $http){
 
     $http.get('/public/files/projects.json').then(function (response) {
         $scope.projects = response.data;
-    }).catch(function (response) {
+    });
+
+    $http.get('/public/files/projetos.json').then(function (response) {
+        $scope.projetos = response.data;
     });
 
     $scope.click = function (data) {

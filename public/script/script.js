@@ -52,6 +52,8 @@ $(document).ready(function() {
           showCancelButton: true,
           closeOnConfirm: false,
           showLoaderOnConfirm: true,
+          confirmButtonText: "Yup, send it",
+          cancelButtonText: "Nope, go back"
         },
         function(){
             var name = $('#name').val();
@@ -59,7 +61,7 @@ $(document).ready(function() {
             var message = $('#message').val();
 
             if(name.value == "" || email.value == "" || message.value == "") {
-              swal("Something went wrong...", "Please fill all the fields.", "error");
+              swal("Something went wrong", "Please fill all the fields.", "error");
               return false;
             }
 
@@ -81,7 +83,7 @@ $(document).ready(function() {
                     $('#message').val('');
                 },
                 error: function(){
-                    swal("Something went wrong...", "Please try again.", "error");
+                    swal("Something went wrong", "Please try again.", "error");
                 }
             });
         });
