@@ -1,4 +1,4 @@
-# InstManager
+# My personal website
 
 1. [Description](#description)
 2. [Technologies](#technologies)
