@@ -5,7 +5,10 @@ $(document).ready(function() {
     if($( window ).width() > 768) { 
         $('#fullpage').fullpage();
     }
-    
+
+    // Wow
+    new WOW().init();
+
     //Funny text
 
     $('.text1').funnyText({

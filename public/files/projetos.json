@@ -3,7 +3,7 @@
         "title": "QuintoAndar Tenants App",
         "cover": "public/img/pwa.png",
         "description": "Como parte do meu trabalho atual, ajudo a desenvolver o aplicativo principal da empresa, que foi completamente atualizado para uma versão em PWA. Algumas de minhas últimas contribuições foram o fluxo de alertas do Homes, mostrar propostas no anúncio e a criação de alertas de disponibilidade de horário para visitas.",
-        "technologies": "React, Redux, Webpack, Eslint, Jest, Enzyme, Styled-components, and Google's Material-ui and Service Worker",
+        "technologies": "React, Redux, Webpack, Eslint, Jest, Enzyme, Styled-components, Material-ui e Service Worker do Google",
         "site": "https://pwa.quintoandar.com.br",
         "git": "",
         "pictures": [
@@ -24,7 +24,7 @@
     {
         "title": "Ionic App",
         "cover": "public/img/ionic.png",
-        "description": "Enquanto trabalhava na empresa anterior, ajudei a contruir um aplicativo de rede social para uma empresa multinacional. O app contava com muitas funções legais, como editor de fotos, compartilhamento com outras redes sociais e um feed exclusivo",
+        "description": "Enquanto trabalhava na empresa anterior, ajudei a construir um aplicativo de rede social para uma empresa multinacional. O app contava com muitas funções legais, como editor de fotos, compartilhamento com outras redes sociais e um feed exclusivo",
         "technologies": "Ionic framework, muitos plugins Cordova, Angularjs, Gulp, SCSS e uma API construída em Ruby on Rails. ",
         "site": "",
         "git": "",
@@ -47,7 +47,7 @@
         "title": "This website",
         "cover": "public/img/site.png",
         "description": "Minha página pessoal já teve umas carinhas diferentes. Essa é a versão de 2017.",        
-        "technologies" : "Esse site foi construído usando HTML5, CSS3, Flexbox, SCSS, Jquery, Angularjs, WOW, Animation, Normalize, FullPage, FunnyText e algumas outras tecnologias.",
+        "technologies" : "Esse site foi construído usando HTML5, CSS3, Flexbox, SCSS, Jquery, Angularjs, WOW, Animate, Normalize, FullPage, FunnyText e algumas outras tecnologias.",
         "site": "http://thiagoloschi.com",
         "git": "https://github.com/thiagoloschi/thiagoloschi.github.com", 
         "pictures": [

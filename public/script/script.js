@@ -4,7 +4,12 @@ $(document).ready(function() {
 
     if($( window ).width() > 768) { 
         $('#fullpage').fullpage();
+    } else {
+        // Wow
+        new WOW().init();
     }
+
+
 
     //Funny text
 
