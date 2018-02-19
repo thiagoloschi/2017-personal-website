@@ -2,8 +2,8 @@
     {
         "title": "QuintoAndar Tenants App",
         "cover": "public/img/pwa.png",
-        "description": "As part of my current job, I help to develop the company's main app which is being entirely redesigned. My latest contributions were the alert creation feature, known by Homes flow.",
-        "technologies": "PWA, React, Redux and Google's Material-ui",
+        "description": "As part of my current job, I help to develop the company's main app which has been entirely updated to a PWA version. Some of my latest contributions were the Homes alert creation flow, show offers on listing and the schedule availability alert for visitations.",
+        "technologies": "React, Redux, Webpack, Eslint, Jest, Enzyme, Styled-components, and Google's Material-ui and Service Worker",
         "site": "https://pwa.quintoandar.com.br",
         "git": "",
         "pictures": [
@@ -14,7 +14,7 @@
         "title": "Instmanager",
         "cover": "public/img/instmanager.png",
         "description": "InstManager is an Instagram client created with the unique purpose of entertaining Instagram users by providing cool insights and usage statistics from their Instagram accounts. Users will be able to see which of their friends follow them back and will have the ability to follow and unfollow other users.",        
-        "technologies" : "This application utilizes node.js, express.js, mongodb and angular.js among other technologies.",
+        "technologies" : "This application utilizes Nodejs, Expressjs, MongoDB and Angularjs among other technologies.",
         "site": "https://instmanager.herokuapp.com",
         "git": "https://github.com/thiagoloschi/instmanager", 
         "pictures": [
@@ -24,8 +24,8 @@
     {
         "title": "Ionic App",
         "cover": "public/img/ionic.png",
-        "description": "While working on the previous company, I helped to build a social network app, with tons of nice features.",
-        "technologies": "Ionic framework, many Cordova plugins, Angularjs, Gulp, SCSS and an api in Ruby on Rails. ",
+        "description": "While working on the previous company, I helped to build a social network app for an international company. The app had many cool features, such as a photo editor, features for sharing to other social medias and an exclusive feed.",
+        "technologies": "Ionic framework, many Cordova plugins, Angularjs, Gulp, SCSS and an API built in Ruby on Rails. ",
         "site": "",
         "git": "",
         "pictures": [
@@ -35,8 +35,8 @@
     {
         "title": "Quinto Landing Page",
         "cover": "public/img/quinto.png",
-        "description": "This is the redesign of QuintoAndar's landing page in an attempting to build a more mobile friendly approach, assuring responsiveness, mainly when resizing the window. In this version, made as a challenge, I also implemented a new trend menu and a telephone number mask solution in pure JS, to handle the 9th digit.",
-        "technologies": "Boostrap for griding, pure js for input validation, some jquery to handle the events and SCSS for the css.",
+        "description": "This is the redesign of QuintoAndar's landing page in an attempting to build a more mobile friendly approach, assuring responsiveness, mainly when resizing the window. In this version, made as a challenge, I also implemented a new trend menu and a telephone number validation mask solution in pure JS, ready to work with 9 digit numbers.",
+        "technologies": "Boostrap for griding, pure JS for input validation, some Jquery to handle the events and SCSS for styling.",
         "site": "http://thiagoloschi.com/quintoandar",
         "git": "https://github.com/thiagoloschi/QuintoLandingPage",
         "pictures": [
@@ -46,8 +46,8 @@
     {
         "title": "This website",
         "cover": "public/img/site.png",
-        "description": "My personal portfolio already had a few different faces. This is the 2017 version of my website.",        
-        "technologies" : "This website was built using HTML5, CSS3, Flexbox, SCSS, jQuery, WOW, animation, normalize, FullPage, FunnyText among others.",
+        "description": "My personal website already had a few different faces. This is the 2017 version of it.",        
+        "technologies" : "This website was built using HTML5, CSS3, Flexbox, SCSS, Jquery, WOW, Animate, Normalize, FullPage, FunnyText among others technologies.",
         "site": "http://thiagoloschi.com",
         "git": "https://github.com/thiagoloschi/thiagoloschi.github.com", 
         "pictures": [
