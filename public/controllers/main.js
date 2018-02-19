@@ -41,12 +41,12 @@ site.controller('mainController', function($scope, $http){
  
     function appendPictures (pictures) {
         for(var i=0; i< pictures.length; i++) {
-            $('<div class="item"><img src="'+pictures[i]+'"><div class="carousel-caption"></div></div>')
+            $('<div class="item"><div><img src="'+pictures[i]+'"><div class="carousel-caption"></div></div></div>')
                 .appendTo('.carousel-inner');
             $('<li class="indicators removable" data-target="#myCarousel" data-slide-to="'+i+'}"></li>')
                 .appendTo('.carousel-indicators');
         }
-        $('.item').first().addClass('active');
+        $('.item').first().first().addClass('active');
         $('.carousel-indicators > li').first().addClass('active');
     }
 

@@ -56,7 +56,7 @@ section {
 .language{
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 80px;
     padding: 20px 110px;
 }
 
@@ -110,9 +110,15 @@ section {
     min-height: 100vh;
 }
 
+.about-me{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    height: 100vh;
+}
+
 #about .container {
-    height: 100%;
-    margin-top: 60px;
+    height: fit-content;
     min-height: inherit;
 }
 
@@ -141,10 +147,6 @@ section {
 
 #about .info {
     margin: 16px 0;
-}
-
-.about-me{
-    height: 100%;
 }
 
 .img-circle{
@@ -221,6 +223,7 @@ section {
     font-size: 72px;
     right: 32px;
     position: absolute;
+    text-shadow: 1px 1px 1px #333;
 }
 
 #myModal .close:focus {
@@ -256,10 +259,22 @@ section {
     max-height: 40%;
 }
 
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    line-height: 1;
+.item {
     height: 70vh;
-    margin: auto;
+}
+
+.item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-inner > .item > div > img, .carousel-inner > .item > a > div > img {
+    line-height: 1;
+    height: 100%;
+    width: auto;
 }
 
 .otherprojects {
@@ -279,6 +294,17 @@ section {
     margin: auto;
     text-align: center;
     color: #02b3e4;
+}
+
+#contact > div {
+        display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#contact .wrapper {
+    height: fit-content;
+    min-height: fit-content;
 }
 
 #contact h2{
@@ -365,16 +391,68 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
+    #myModal {
+        position: fixed;
+    }
+
+    #myModal .close {
+        font-size: 41px;
+        right: 20px;
+        z-index: 2;
+    }
+
+    .modal-content {
+        width: 100vw;
+    }
+
+    .carousel-inner > .item > div > img, .carousel-inner > .item > a > div > img {
+        line-height: 1;
+        height: 100%;
+        margin: unset;
+        width: auto;
+    }   
+
+    #fullpage { 
+        overflow: hidden;
+    }
+
+    section {
+        min-height: 100vh;
+    }
+
     .slogan{
         font-size: 16px;
-        padding-top:
-        220px;
+        padding-top: 248px;
+        position: static
+    }
+    .skin {
+        height: 100vh;
+    }
+    .overlay {
+        position: static;
     }
 
     .language{
-        top:0;
-        right: 0;
-        padding-right: 300px;
+        top: 779px;
+        right: -234px;
+        padding-right: 256px;
+        transform: rotate(-45deg);
+    }
+
+    .otherprojects{
+        margin-bottom: 20px;
+    }
+
+    #contact {
+        height: 100vh !important;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    #contact .wrapper {
+        height: fit-content;
+        min-height: fit-content;
     }
 
     .contact-form textarea{
