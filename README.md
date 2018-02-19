@@ -14,7 +14,7 @@ Some of the technologies I've used to build it were HTML5, CSS3, Flexbox, SCSS, 
 <br />
 
 ### Website
-To see it running live, you can visit www.thiagoloschi.com or www.thiagoloschi.github.io
+To see it running live, you can visit www.thiagoloschi.com or [www.thiagoloschi.github.io](https://thiagoloschi.github.io)
 <br />
 
 ### Screenshots
