@@ -208,7 +208,7 @@ section {
 #myModal {
     position: absolute;
     margin: auto;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-color: transparent;
 }
@@ -396,8 +396,9 @@ section {
     }
 
     #myModal .close {
-        font-size: 41px;
-        right: 20px;
+        font-size: 48px;
+        right: 24px;
+        top: 24px;
         z-index: 2;
     }
 
