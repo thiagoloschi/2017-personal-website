@@ -10,7 +10,7 @@ This is another redesign of my personal website, built in the beginning of 2017.
 <br /> 
 
 ### Technologies
-Some of the technologies I've used to build it were HTML5, CSS3, Flexbox, SCSS, Jquery, Angularjs, WOW, Animation, Normalize, FullPage, FunnyText among other technologies.
+Some of the technologies I've used to build it were HTML5, CSS3, Flexbox, SCSS, Jquery, Angularjs, WOW, Animate, Normalize, FullPage, FunnyText among other technologies.
 <br />
 
 ### Website
