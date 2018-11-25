@@ -1,5 +1,16 @@
 [
     {
+        "title": "Bounce The Ball",
+        "cover": "public/img/bouncemain.png",
+        "description": "Esse é um pequeno jogo baseado em um design em CSS puro que eu criei a um tempo atrás. O desafio aqui é quicar a bola o mais rápido que conseguir em 30 segundos. Se apresse e você pode entrar no Top 10. O desenvolvimeento do jogo ainda está em progresso.",
+        "technologies": "PWA, React, Redux, Webpack, Eslint, Jest, Enzyme, Styled-components, Service Worker",
+        "site": "https://bouncetheball.herokuapp.com/",
+        "git": "https://github.com/thiagoloschi/bounceTheBall",
+        "pictures": [
+            "public/img/bouncemain.png", "public/img/bounceplayground.png"
+        ]
+    },
+    {
         "title": "QuintoAndar Tenants App",
         "cover": "public/img/pwa.png",
         "description": "Como parte do meu trabalho atual, ajudo a desenvolver o aplicativo principal da empresa, que foi completamente atualizado para uma versão em PWA. Algumas de minhas últimas contribuições foram o fluxo de alertas do Homes, mostrar propostas no anúncio e a criação de alertas de disponibilidade de horário para visitas.",

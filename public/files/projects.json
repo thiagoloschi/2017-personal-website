@@ -1,9 +1,20 @@
 [
     {
+        "title": "Bounce The Ball",
+        "cover": "public/img/bouncemain.png",
+        "description": "This is a small game based on a pure CSS design I created sometime ago. The challenge here is to bounce the ball as many times you can get in 30 seconds. Hurry up and you can make the Top 10. The game develompment is still in progress.",
+        "technologies": "PWA, React, Redux, Webpack, Eslint, Jest, Enzyme, Styled-components, Service Worker",
+        "site": "https://bouncetheball.herokuapp.com/",
+        "git": "https://github.com/thiagoloschi/bounceTheBall",
+        "pictures": [
+            "public/img/bouncemain.png", "public/img/bounceplayground.png"
+        ]
+    },
+    {
         "title": "QuintoAndar Tenants App",
         "cover": "public/img/pwa.png",
-        "description": "As part of my current job, I help to develop the company's main app which has been entirely updated to a PWA version. Some of my latest contributions were the Homes alert creation flow, show offers on listing and the schedule availability alert for visitations.",
-        "technologies": "React, Redux, Webpack, Eslint, Jest, Enzyme, Styled-components, and Google's Material-ui and Service Worker",
+        "description": "As part of my current job, I help to develop the company's main app, which has been entirely remodeled to a PWA version. Some of my latest contributions were the Homes alert creation flow, show offers on listing and the schedule availability alert for visiting.",
+        "technologies": "React, Redux, Webpack, Eslint, Jest, Enzyme, Styled-components, Google's Material-ui and Service Worker",
         "site": "https://pwa.quintoandar.com.br",
         "git": "",
         "pictures": [
@@ -14,7 +25,7 @@
         "title": "Instmanager",
         "cover": "public/img/instmanager.png",
         "description": "InstManager is an Instagram client created with the unique purpose of entertaining Instagram users by providing cool insights and usage statistics from their Instagram accounts. Users will be able to see which of their friends follow them back and will have the ability to follow and unfollow other users.",        
-        "technologies" : "This application utilizes Nodejs, Expressjs, MongoDB and Angularjs among other technologies.",
+        "technologies" : "This application uses Nodejs, Expressjs, MongoDB and Angularjs among other technologies.",
         "site": "https://instmanager.herokuapp.com",
         "git": "https://github.com/thiagoloschi/instmanager", 
         "pictures": [

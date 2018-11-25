@@ -1,18 +1,16 @@
 $(document).ready(function() {
 
-    //FullPage
-
     if($( window ).width() > 768) { 
-        $('#fullpage').fullpage();
-    } else {
-        // Wow
-        new WOW().init();
+        //FullPage
+        $('#fullpage').fullpage({
+            scrollBar: true
+        });
     }
 
-
+    //Wow
+    new WOW().init();
 
     //Funny text
-
     $('.text1').funnyText({
 		speed: 550,
 		borderColor: '#00AEEF',

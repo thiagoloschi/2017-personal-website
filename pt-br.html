@@ -26,7 +26,7 @@
                                 I'm a
                             </div>
                             <div class="text2">
-                                Software
+                                Frontend
                             </div>
                             <div class="text3">
                                 Engineer
@@ -48,7 +48,7 @@
                     <div class="container">
                         <img class="img-circle wow zoomIn" src="public/img/profile.png" />
                         <h2 class="wow zoomInRight">Thiago Loschi</h2>
-                        <p class="wow zoomInRight">Meu nome é <strong>Thiago Loschi</strong> e eu sou apaixonado por construir aplicações rápidas, escaláveis e confiáveis. Possuo mais de 3 anos de experiência em desenvolvimento web e estou sempre interessado em aprender algo novo. Atualmente, Eu sou Software Engineer na <a href="https://quintoandar.com.br"><strong>QuintoAndar</strong></a> e moro em São Paulo, Brasil.</p>
+                        <p class="wow zoomInRight">Meu nome é <strong>Thiago Loschi</strong> e eu sou apaixonado por construir aplicações rápidas, escaláveis e confiáveis. Possuo mais de 3 anos de experiência em desenvolvimento web e estou sempre interessado em aprender algo novo. Atualmente, Eu sou Frontend Engineer no <a href="https://quintoandar.com.br"><strong>QuintoAndar</strong></a> e moro em São Paulo, Brasil.</p>
                         <div class="row info wow fadeInLeft">
                             <div class="col-sm-6">
                                 <h3>Educação</h4>
@@ -61,17 +61,17 @@
                             </div>
                             <div class="col-sm-6 skills">
                                 <h3>Habilidades</h4>
-                                <p><strong>Javascript: </strong> Node.js, Angular.js, React, Universal JS</p>
-                                <p><strong>Python</strong></p>
-                                <p><strong>Ruby on Rails</strong></p>
-                                <p><strong>Java: </strong>JPA, JSP, JSF, EJB</p>
+                                <p>Reactjs, ES6, Redux, Angularjs, HTML5,</p>
+                                <p>CSS3, Webpack, PWA, Eslint, Jest, BEM,</p>
+                                <p>Enzyme, Nodejs, Ruby on Rails, Typescript,</p>
+                                <p>Leadership, Scrum, Product Mindset</p>
                             </div>
                         </div>
                         <div class="row wow fadeIn">
-                            <div class="col-sm-6">
+                            <div class="col-xs-6">
                                 <a target="_blank" href="https://linkedin.com/in/thiagoloschi"><button class="btn btn-lg but" type="submit">Linkedin <i class="fa fa-linkedin" aria-hidden="true"></i></button></a>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-xs-6">
                                 <a target="_blank" href="public/files/PortugueseResume.pdf"><button class="btn btn-lg but" type="submit">Currículo <i class="fa fa-envelope-o" aria-hidden="true"></i></button></a>
                             </div>
                         </div>
@@ -86,21 +86,23 @@
                 <h2>Principais Projetos Recentes</h2>
                 <div class="showcase container">
                     <div class="row">
-                        <div class="col-sm-4 wow zoomIn card" ng-repeat="project in projetos">
-                            <div ng-click="click(this.project)" class="card-header" role="button" 
-                                data-toggle="modal" data-target="#myModal">   
-                                <img ng-if"project.title != ''" src="{{project.cover}}" />                
+                        <div class="projectsWrapper">
+                            <div class="col-sm-4 wow zoomIn card" ng-repeat="project in projetos">
+                                <div ng-click="click(this.project)" class="card-header" role="button" 
+                                    data-toggle="modal" data-target="#myModal">   
+                                    <img ng-if"project.title != ''" src="{{project.cover}}" />                
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="otherprojects" >
-                        <a target="_blank" href="https://github.com/thiagoloschi">Ver mais projetos no Github</a>
-                    </div>
+                </div>
+                <div class="otherprojects" >
+                    <a target="_blank" href="https://github.com/thiagoloschi">Ver mais projetos no Github</a>
                 </div>
             </section>
 
             <section id="contact" class="section wrapper">
-                <div class="wrapper wow tada">
+                <div class="wrapper wow bounce">
                     <h2>Entre em contato</h2>
                     <div class="container">
                         <form class="contact-form">

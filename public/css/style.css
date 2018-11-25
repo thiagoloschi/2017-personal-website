@@ -25,19 +25,18 @@ section {
 /********************* Intro *********************/
 
 #intro{
-    background-color: #0CCE6B;
     min-height: 100vh;
     overflow: hidden;
     margin: auto;
     text-align: center;
-    background: linear-gradient(to bottom right, #3b5998,#02b3e4);
+    background: linear-gradient(to bottom right, #3b5998,#1565C0);
 }
 
 .skin{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(70,70,70,0.7 );
+    background-color: rgba(70,70,70,0.7);
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
     position: relative;
@@ -123,7 +122,7 @@ section {
 }
 
 #about h2{
-    color: #02b3e4;
+    color: #1565C0;
     font-size: 32px;
     padding: 10px;
     vertical-align: middle;
@@ -131,7 +130,7 @@ section {
 }
 
 #about h3{
-    color: #02b3e4;
+    color: #1565C0;
 }
 
 #about .btn{
@@ -161,43 +160,61 @@ section {
 
 #projects{
     height: 100vh;
-    color: #2e2f33;
+    color: #fafafa;
     margin: auto;
     text-align: center;
     overflow: hidden;
-    background: linear-gradient(to bottom right, #3b5998,#02b3e4);
+    background: linear-gradient(to bottom right, #3b5998,#1565C0);
 }
 
 #projects h2{
     color: inherit;
     font-size: 40px;
     padding: 15px;
-    vertical-align: middle;
     margin-bottom: 24px;
+    color: #fafafa;
 }
 
 .showcase{
-    vertical-align: middle;
     padding: 0 35px;
     text-align: center;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    height: 550px;
 }
 
-.card{
+.projectsWrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 1200px;
+}
+
+.card {
     height: 250px;
-    color: white;
+    color: #fafafa;
     margin: auto;
+    max-width: 360px;
+    display: flex;
+    justify-content: center;
 }
 
-.card-header{
+.card-header {
     margin: auto;
     background-color: rgba(50, 50, 50, 0.8);
     color: black;
     height: 240px;
+    min-width: 360px;
     border: 1px solid #2e2f33;
     background-size: cover;
     background-position: top;
     box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+.card-header:hover {
+    background-color: rgba(50, 50, 50, 0.3);
 }
 
 .card-header img{
@@ -206,7 +223,7 @@ section {
 }
 
 #myModal {
-    position: absolute;
+    position: fixed;
     margin: auto;
     height: 100%;
     width: 100vw;
@@ -218,7 +235,7 @@ section {
 }
 
 #myModal .close {
-    color: white;
+    color: #fafafa;
     opacity: 0.9;
     font-size: 72px;
     right: 32px;
@@ -283,7 +300,7 @@ section {
 }
 
 .otherprojects a {
-    color: black;
+    color: #fafafa;
 }
 
 /********************* Contact *********************/
@@ -293,7 +310,7 @@ section {
     background-color: #2e2f33;
     margin: auto;
     text-align: center;
-    color: #02b3e4;
+    color: #42A5F5;
 }
 
 #contact > div {
@@ -353,11 +370,11 @@ section {
 }
 
 .but{
-    background-color: #02b3e4;
+    background-color: #42A5F5;
     border: solid 1px black;
     color: black;
     width: 100%;
-    min-width: 300px;
+    min-width: 256px;
     max-width: 450px;
     border-radius: 0;
     padding: 17px;
@@ -438,6 +455,18 @@ section {
         right: -234px;
         padding-right: 256px;
         transform: rotate(-45deg);
+    }
+
+    .showcase {
+        height: 100%;
+    }
+
+    .card, .card-header {
+        min-width: 460px;
+    }
+
+    .projectsWrapper {
+        width: 300px;
     }
 
     .otherprojects{

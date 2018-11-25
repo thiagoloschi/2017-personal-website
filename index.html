@@ -25,7 +25,7 @@
                                 I'm a
                             </div>
                             <div class="text2">
-                                Software
+                                Frontend
                             </div>
                             <div class="text3">
                                 Engineer
@@ -46,30 +46,30 @@
                     <div class="container">
                         <img class="img-circle wow zoomIn" src="public/img/profile.png" />
                         <h2 class="wow zoomInRight">Thiago Loschi</h2>
-                        <p class="wow zoomInRight">My name is <strong>Thiago Loschi</strong> and I'm passionate about building fast, scalable and reliable applications. I've been working with Web Development in the past 3 years and I'm always seeking to learning something new. Currently, I'm a Software Engineer at <a href="https://quintoandar.com.br"><strong>QuintoAndar</strong></a> and live in São Paulo, Brazil.</p>
+                        <p class="wow zoomInRight">My name is <strong>Thiago Loschi</strong> and I'm Front End Software Engineer, currently living in São Paulo, Brazil. For more than 3 years now, I have been developing quality software, such as SPA's, PWA's, Websites and so on. As an engineer, the biggest goal of my career is to use technology as an ally, towards innovation, and onto making people's lives easier. Currently, I teamed up with many brilliant professionals to help building <a href="https://quintoandar.com.br"><strong>QuintoAndar</strong></a>, the new generation real estate services in Brazil. And it is a hit!</p>
                         <div class="row info wow fadeInLeft">
                             <div class="col-sm-6">
                                 <h3>Education</h4>
                                 <div class="university">
-                                    <p><strong>B.S. Internet Systems</strong><br/>
-                                    Southwest Minas Gerais Federal Institute</p>
-                                    <p><strong>B.S. Computer Science (International Mobility)</strong><br/>
+                                    <p><strong>B.S. Systems For The Internet</strong><br/>
+                                    Insituto Federal do Sudeste de Minas Gerais</p>
+                                    <p><strong>B.S. Computer Science (Continuing Education)</strong><br/>
                                     California State University East Bay</p>
                                 </div>
                             </div>
                             <div class="col-sm-6 skills">
-                                <h3>Main Skills</h4>
-                                <p><strong>Javascript: </strong> Node.js, Angular.js, React, Redux</p>
-                                <p><strong>Python:</strong> Django, Flask</p>
-                                <p><strong>Ruby:</strong> Rails</p>
-                                <p><strong>Java: </strong>JPA, JSP, JSF, EJB</p>
+                                <h3>Main Skills</h4>    
+                                <p>Reactjs, ES6, Redux, Angularjs, HTML5,</p>
+                                <p>CSS3, Webpack, PWA, Eslint, Jest, BEM,</p>
+                                <p>Enzyme, Nodejs, Ruby on Rails, Typescript,</p>
+                                <p>Leadership, Scrum, Product Mindset</p>
                             </div>
                         </div>
                         <div class="row wow fadeIn">
-                            <div class="col-sm-6">
+                            <div class="col-xs-6">
                                 <a target="_blank" href="https://linkedin.com/in/thiagoloschi"><button class="btn btn-lg but" type="submit">Linkedin <i class="fa fa-linkedin" aria-hidden="true"></i></button></a>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-xs-6">
                                 <a a target="_blank" href="public/files/EnglishResume.pdf"><button class="btn btn-lg but" type="submit">Resume <i class="fa fa-envelope-o" aria-hidden="true"></i></button></a>
                             </div>
                         </div>
@@ -83,21 +83,23 @@
                 <h2>Main Latest Projects</h2>
                 <div class="showcase container">
                     <div class="row">
-                        <div class="col-sm-4 wow zoomIn card" ng-repeat="project in projects">
-                            <div ng-click="click(this.project)" class="card-header" role="button" 
-                                data-toggle="modal" data-target="#myModal">   
-                                <img ng-if"project.title != ''" src="{{project.cover}}" />                
+                        <div class="projectsWrapper">
+                            <div class="col-sm-4 wow zoomIn card" ng-repeat="project in projects">
+                                <div ng-click="click(this.project)" class="card-header" role="button" 
+                                    data-toggle="modal" data-target="#myModal">   
+                                    <img ng-if"project.title != ''" src="{{project.cover}}" />                
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="otherprojects" >
-                        <a target="_blank" href="https://github.com/thiagoloschi">See more projects on Github</a>
-                    </div>
+                </div>
+                <div class="otherprojects" >
+                    <a target="_blank" href="https://github.com/thiagoloschi">See more projects on Github</a>
                 </div>
             </section>
 
             <section id="contact" class="section">
-                <div class="wrapper wow tada">
+                <div class="wrapper wow bounce">
                     <h2>Get In Touch</h2>
                     <div class="container">
                         <form class="contact-form">
@@ -135,7 +137,7 @@
         </div>
 
         <!-- Modal -->
-        <div ng-cloak class="modal fade" id="myModal" role="dialog">
+        <div class="modal fade" id="myModal" role="dialog">
             <button type="button" class="close" data-dismiss="modal" ng-click="reset()">&times;</button>
             <div class="regulation">
                 <div class="modal-content">

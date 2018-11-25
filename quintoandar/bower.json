@@ -1,0 +1,21 @@
+{
+  "name": "QuintoLandingPage",
+  "homepage": "https://github.com/thiagoloschi/QuintoLandingPage",
+  "authors": [
+    "Thiago Loschi <thiagoloschi@gmail.com>"
+  ],
+  "description": "This is a coding challenge for QuintoAndar",
+  "main": "app/app.js",
+  "keywords": [
+    "QuintoAndar",
+    "Angular",
+    "SCSS",
+    "bower",
+    "Design"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

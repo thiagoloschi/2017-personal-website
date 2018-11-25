@@ -1,0 +1,148 @@
+@media (max-width: 520px) {
+
+    header{
+        background-position: 22% 30%!important;
+
+        .form-control{
+            padding: 20px 10px!important;
+            transition: all .2s ease;
+            color: #808080;
+            font-size: 12px!important;
+            height: 53px;
+        }
+    }
+
+    .download-text{
+        text-align: center;
+        img{
+            width: auto;
+
+        }
+
+        input{
+            width: 200px!important;
+        }
+    }
+
+    .midia{
+        img{
+            width: 120px;
+        }
+
+        .col-xs-6{
+            padding: 10px;
+        }
+
+        a{
+            margin: 10px;
+        }
+    }
+}
+
+
+
+@media (max-width: 992px) {
+
+    header{
+        background-position: 50% 30%;
+    }
+
+    #fav{
+        right: 10px;
+        border: none;
+        padding-top: 5px;
+        svg{
+            height: 24px!important;
+            width: 45px!important;
+        }
+
+    }
+
+    #menu-button{
+        &:hover{
+            background-color: transparent;
+        }
+
+        &:active{
+            background-color: transparent;
+        }
+    }
+
+    .navbar-default .navbar-toggle{
+        background-color: transparent;
+
+        &:hover{
+            background-color: transparent;
+        }
+
+        &:focus{
+            background-color: transparent;
+        }
+    }
+
+
+
+    #anunciar{
+        padding: 10px 45px;
+        margin-top: 22px;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 0px;
+        border: solid 2px white;
+        text-align: center;
+        transition: all .2s;
+        font-size: 18px;
+        overflow: hidden;
+        min-height: 36px;
+        margin-left: 15px;
+        margin-right: 8px;
+        font-weight: bold;
+        margin: 50px auto;
+
+        &:hover{
+            background-color: #fff;
+            color: #50a0f0;
+        }
+    }
+
+    .download{
+        height: 100%;
+        padding-bottom: 30px;
+        width: 100%;
+
+    }
+
+    .download-text{
+        text-align: center;
+        p{
+            text-align: center!important;
+        }
+    }
+
+    .midia{
+        a{
+            img{
+                margin: 0 30px;
+            }
+
+        }
+    }
+
+    .sites{
+        width: 100%;
+    }
+
+    .lista{
+        padding-left: 10px!important;
+    }
+}
+
+
+@media (min-width: 520px) and (max-width: 992px) {
+    .download-text{
+        text-align: center;
+        img{
+            margin: 0 20%;
+        }
+    }
+}
